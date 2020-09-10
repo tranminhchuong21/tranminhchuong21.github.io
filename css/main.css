@@ -1,0 +1,769 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+	box-sizing: border-box;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	background-color: maroon;
+	scroll-behavior: smooth; 
+	overflow-y: scroll;
+	overflow: hidden;
+	
+}
+.page
+{
+	width: 100%;
+	height: 100vh;
+	background-color: #0F0E14;
+}
+.info-menu
+{
+	width: 22%;
+	height: 100vh;
+	background-color: #0F0E14;
+	float: left;
+	position: fixed;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #C5945C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 200px;
+}
+
+.sidenav a {
+	
+	  padding: 10px 100px 10px 100px;
+	  text-decoration: none;
+	  color: white;
+	  display: block;
+	  transition: 0.3s;
+	
+	font-family: Jaapokki;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	line-height: 58px;
+	letter-spacing: 0.03em;
+
+}
+
+.sidenav a:hover, .sidenav a:focus
+{
+  color: #0F0E14;
+  transition-duration: 0.5s;
+  
+}
+
+
+.sidenav .closebtn {
+  font-family: lato;
+  position: absolute;
+  top: 10px;
+  font-size: 50px;
+  margin-left: -60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.info-menu img
+{
+	width: 55px;
+	position: absolute;
+	left: 100px;
+	top: 175px;
+
+}
+.text
+{
+	position: absolute;
+	left: 100px;
+	font-family: Lato;
+	font-style: normal;
+	line-height: 28px;
+	top: 270px;
+}
+.text p
+{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.25em;
+	color: #C5945C;
+}
+.text p1
+{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	/* identical to box height */
+
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+.scripture p
+{
+	position: absolute;
+	left: 100px;
+	top: 775px;
+
+	font-family: Scripture;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 45px;
+	line-height: 40px;
+	color: #C5945C;
+}
+.image
+{
+	top: 0;
+	width: 78%;
+	height: 100vh;
+	background-image: url(../images/background.png);
+	float: right;
+}
+.image-color
+{
+	position: relative;
+	margin-top: -100vh;
+	width: 78%;
+	height: 100vh;
+	background-color: #181720;
+	opacity: 0.6;
+	float: right;
+}
+
+.background h1
+{
+	position: absolute;
+	width: 591px;
+	height: 96px;
+	left: 870px;
+	top: 567px;
+ 
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 96px;
+	color: #C5945C;
+}
+.background p
+{
+	position: absolute;
+	left: 941px;
+	top: 626px;
+
+	font-family: Scripture;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 40px;
+	color: #F2F2F2;
+}
+.background p1
+{
+	position: absolute;
+	left: 1088px;
+	top: 717px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 34px;
+	color: #F2F2F2; 
+}
+
+
+/*service*/
+
+.service-content
+{
+	position: absolute;
+	margin-left: 538px;
+	width: 500px;
+	height: 670px;
+	padding-top:148px;
+}
+.service-content h1
+{
+	left: 538px;
+	top: 116vh;
+	font-family: Jaapokki;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 64px;
+	color: #C5945C;
+}
+.service-content h2
+{
+	left: 538px;
+	top: 1263px;
+
+	font-family: roboto;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	color: #C5945C;
+}
+.service-content h3
+{
+	left: 538px;
+	top: 1263px;
+	margin-top: 20px;
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	color: white;
+	opacity: 0.8;
+}
+.myportfolio
+{
+	width: 204px;
+	height: 60px;
+	border: solid 1.0px;
+/*	border-radius: 70px;*/
+	margin-top: 30px;
+	text-align: center;
+	font-family: roboto;
+	line-height: 60px;
+	color: #C5945C;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+}
+.myportfolio:hover
+{
+	background: #C5945C;
+	border: none;
+	color: white;
+	border-radius: 70px;
+}
+.service-image
+{
+	margin-left: 1080px;
+	width: 700px;
+	height: 670px;
+	padding-top:148px;
+	
+}
+
+/*portfolio*/
+
+.portfolio-back
+{
+	top: 0;
+	width: 78%;
+	height: 100vh;
+	float: right;
+}
+
+.portfolio-top
+{
+	width: 100%;
+	height: 50vh;
+}
+.grid-text img
+{
+	width: 33.3333%;
+	height: 50vh;
+	float: left;
+	cursor: pointer;
+	opacity: 1;
+	transition: all .3s ease;
+	
+}
+
+.grid-text:hover img
+{
+	opacity: 0.6;
+}
+
+.grid-text
+{
+	transition: all .4s linear;
+	opacity: 1;
+}
+.grid-text:hover
+{
+	opacity: 0.8;
+}
+
+
+/*resume*/
+.resume
+{
+	top: 0;
+	width: 78%;
+	height: 100vh;
+	background-color: none;
+	float: right;
+}
+.resume-text
+{
+	margin-left: 172px;
+	margin-top: 15px;
+	font-family: Roboto;
+	font-size: 20px;
+}
+
+.resume-text p
+{
+	
+	font-weight:700;
+	font-size: 22px;
+	color: #C5945C;
+}
+.resume-text p1
+{
+	font-weight: 400;
+	color: white;
+}
+.resume-text p2
+{
+	font-weight: 100;
+	color: #9F9F9F;
+	font-size: 18px;
+}
+
+.education
+{
+	width: 50%;
+	height: 100vh;
+	background-color: none;
+	float: left;
+}
+.education h1
+{
+	font-family: Jaapokki;
+	font-size: 42px;
+	color: #C5945C;
+	margin-left: 138px;
+	margin-top:148px;
+}
+
+.hinhtron
+{
+	position: absolute;
+	margin-top: 20px;
+	width: 22px;
+	height: 22px;
+	border: 1.5px solid #C5945C;
+	border-radius: 100px;
+	transition: 0.6s;
+}
+.hinhtron:hover
+{
+	background-color: white;
+	border: none;
+	transform: scale(1.2)
+}
+.resume-text1
+{
+	margin-top: 15px;
+	font-family: Roboto;
+	font-size: 20px;
+}
+.experience
+{
+	top:0;
+	width: 50%;
+	height: 100vh;
+	background-color: none;
+	float: left;
+}
+
+.experience  h1
+{
+	font-family: Jaapokki;
+	font-size: 42px;
+	line-height: 64px;
+	color: #C5945C;
+	margin-top:148px;
+}
+
+
+/*skills*/
+.progress-circle {
+   font-size: 20px;
+   left: 46px;
+   margin-top: 30px;
+   position: relative; /* so that children can be absolutely positioned */
+   float: left;
+	margin-left: 90px;
+   width: 8em;
+   height: 8em;
+   background-color: rgba(197, 148, 92, 0.2);
+   border-radius: 50%;
+   line-height: 8em;
+}
+
+.progress-circle:after{
+    border: none;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    border-radius: 50%;
+    width: 7.3em;
+    height: 7.3em;
+    background-color: #141319;
+    content: " ";
+}
+/* Text inside the control */
+.progress-circle span {
+    position: absolute;
+    display: block;
+	margin-left: 50px;
+    color: #C5945C;
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 50px;
+    z-index: 2;
+}
+.left-half-clipper { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 8em;
+   height: 8em;
+   position: absolute; /* needed for clipping */
+    clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/ 
+}
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+   clip: rect(auto,auto,auto,auto);
+}
+.value-bar {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+    clip: rect(0, 4em, 8em, 0);
+   width: 8em;
+   height: 8em;
+   border-radius: 50%;
+   border: 0.8em solid #C5945C; /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+  
+}
+/* Progress bar filling the whole right half for values above 50% */
+.progress-circle.over50 .first50-bar {
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 8em, 8em, 4em);
+   background-color: #C5945C;
+   border-radius: 50%;
+   width: 8em;
+   height: 8em;
+}
+.progress-circle:not(.over50) .first50-bar{ display: none; }
+
+
+/* Progress bar rotation position */
+.progress-circle.p59 .value-bar { transform: rotate(212deg); }
+.progress-circle.p60 .value-bar { transform: rotate(216deg); }
+.progress-circle.p61 .value-bar { transform: rotate(220deg); }
+.progress-circle.p62 .value-bar { transform: rotate(223deg); }
+.progress-circle.p63 .value-bar { transform: rotate(227deg); }
+.progress-circle.p64 .value-bar { transform: rotate(230deg); }
+.progress-circle.p65 .value-bar { transform: rotate(234deg); }
+.progress-circle.p66 .value-bar { transform: rotate(238deg); }
+.progress-circle.p67 .value-bar { transform: rotate(241deg); }
+.progress-circle.p68 .value-bar { transform: rotate(245deg); }
+.progress-circle.p69 .value-bar { transform: rotate(248deg); }
+.progress-circle.p70 .value-bar { transform: rotate(252deg); }
+.progress-circle.p71 .value-bar { transform: rotate(256deg); }
+.progress-circle.p72 .value-bar { transform: rotate(259deg); }
+.progress-circle.p73 .value-bar { transform: rotate(263deg); }
+.progress-circle.p74 .value-bar { transform: rotate(266deg); }
+.progress-circle.p75 .value-bar { transform: rotate(270deg); }
+.progress-circle.p76 .value-bar { transform: rotate(274deg); }
+.progress-circle.p77 .value-bar { transform: rotate(277deg); }
+.progress-circle.p78 .value-bar { transform: rotate(281deg); }
+.progress-circle.p79 .value-bar { transform: rotate(284deg); }
+.progress-circle.p80 .value-bar { transform: rotate(288deg); }
+.progress-circle.p81 .value-bar { transform: rotate(292deg); }
+.progress-circle.p82 .value-bar { transform: rotate(295deg); }
+.progress-circle.p83 .value-bar { transform: rotate(299deg); }
+.progress-circle.p84 .value-bar { transform: rotate(302deg); }
+.progress-circle.p85 .value-bar { transform: rotate(306deg); }
+.progress-circle.p86 .value-bar { transform: rotate(310deg); }
+.progress-circle.p87 .value-bar { transform: rotate(313deg); }
+.progress-circle.p88 .value-bar { transform: rotate(317deg); }
+.progress-circle.p89 .value-bar { transform: rotate(320deg); }
+.progress-circle.p90 .value-bar { transform: rotate(324deg); }
+.progress-circle.p91 .value-bar { transform: rotate(328deg); }
+.progress-circle.p92 .value-bar { transform: rotate(331deg); }
+.progress-circle.p93 .value-bar { transform: rotate(335deg); }
+.progress-circle.p94 .value-bar { transform: rotate(338deg); }
+.progress-circle.p95 .value-bar { transform: rotate(342deg); }
+.progress-circle.p96 .value-bar { transform: rotate(346deg); }
+.progress-circle.p97 .value-bar { transform: rotate(349deg); }
+.progress-circle.p98 .value-bar { transform: rotate(353deg); }
+.progress-circle.p99 .value-bar { transform: rotate(356deg); }
+.progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
+
+.skill-back
+{
+	width: 78%;
+	height: 100vh;
+	float: right;
+}
+.skill-back h1
+{
+	position: relative;
+	left: 138px;
+	margin-top:148px;
+	font-family: Jaapokki;
+	font-size: 42px;
+	color: #C5945C;
+}
+.skills {
+    width: 450px;
+    padding-top: 20px;
+	position: absolute;
+	color: #C5945C;
+	margin-left: 138px;
+	margin-top: 200px;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    margin: 60px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #372D26;
+    border-radius: 1000px;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 14px;
+    background-color: #C5945C;
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 80%;
+    }
+}
+
+li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 100%;
+    }
+}
+
+li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 85%;
+    }
+}
+
+li.ng:after {
+    animation-name: ng;
+}
+
+@keyframes ng {
+    to {
+        width: 70%;
+    }
+}
+
+
+/*contact*/
+
+.back-contact
+{
+	top: 0;
+	width: 78%;
+	height: 100vh;
+	background-image: url(../images/Back1.jpg);
+	float: right;
+}
+.backcontact-color
+{
+	position: relative;
+	margin-top: -100vh;
+	width: 78%;
+	height: 100vh;
+	background-color: #181720;
+	opacity: 0.6;
+	float: right;
+}
+.contact-content
+{
+	position: absolute;
+	margin-left: 538px;
+	width: 500px;
+	height: 670px;
+	padding-top:148px;
+}
+.contact-content h1
+{
+	left: 538px;
+	top: 116vh;
+	font-family: Jaapokki;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 64px;
+	color: #C5945C;
+}
+.contact-content p
+{
+	left: 538px;
+	top: 1263px;
+	font-family: roboto;
+	font-style: normal;
+	margin-top: 5px;
+	font-size: 18px;
+	line-height: 28px;
+	color: white;
+	letter-spacing: 1px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  background: none;
+  text-overflow: inherit;
+  border: none;
+  border-bottom: 1px solid #666;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+  color: #ddd;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: roboto;
+}
+
+
+input[type=submit] {
+  border: 1px solid #C5945C;
+  box-sizing: border-box;
+  background: none;
+  padding: 18px 246px;
+  cursor: pointer;
+  margin-top: 100px;
+  outline: none;
+  font-family: roboto;
+  font-style: medium;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #C5945C;
+  transition: 0.6s;
+}
+
+input[type=submit]:hover {
+  background-color: #C5945C;
+  color: white;
+	border-radius: 6px;
+	
+}
+
+.contact-form {
+
+  padding: 40px 28px;
+  color: #C5945C;
+  letter-spacing: 0.1em;
+	
+}
+.contact-form
+{
+	position: absolute;
+	margin-left: 1080px;
+	font-family: roboto;
+	font-style: none;
+	font-size: 15px;
+	top: 5020px;
+	width: 620px;
+	height: 670px;
+	border: 1px solid #C5945C;
+	box-sizing: border-box;
+	  transition: 0.6s;
+	opacity: 0.7;
+	
+}
+.contact-form:hover
+{
+	border-radius: 22px;
+	opacity: 1;
+}
+.copyright
+{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 70px;
+	text-align: right;
+	line-height: 70px;
+	color: white;
+	margin-right: 100px;
+	font-family: lato;
+	font-size: 15px;
+	
+}
+.copyright p
+{
+	color: white;
+	margin-right: 160px;
+	font-family: lato;
+	font-size: 15px;
+}
